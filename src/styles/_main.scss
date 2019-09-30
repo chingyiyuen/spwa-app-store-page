@@ -1,0 +1,10 @@
+@import './utils/variables';
+@import './utils/mixin';
+
+@import '../components/AppItem/app-item';
+@import '../components/AppItemShrink/app-item-shrink';
+@import '../components/StarRating/star-rating';
+@import '../containers/SearchBar/search-bar';
+@import '../containers/TopFreeAppList/top-free-app-list';
+@import '../pages/MainPage/main-page';
+@import '../index';

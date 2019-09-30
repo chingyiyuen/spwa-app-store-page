@@ -1,0 +1,52 @@
+.starRating {
+  -webkit-animation-name: up;
+  -webkit-animation-duration: 1s;
+  animation-name: up;
+  animation-duration: 1s;
+}
+
+.starRating-star {
+  padding: 0px 4px;
+  color: #ff9e01;
+}
+
+.starRating-message-noData {
+  font-size: 18px !important;
+  color: #d28e43;
+}
+
+@-webkit-keyframes up {
+  0% {
+    transform: translate(0px, 30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translate(0px, 30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: $tablet-screen-width) {
+  .starRating-message-noData {
+    font-size: 3vw !important;
+  }
+}
+
+@media screen and (max-width: $mobile-screen-width) {
+  .starRating-star {
+    padding: 0px 2px;
+  }
+}

@@ -1,0 +1,150 @@
+.appItem {
+  display: flex;
+  padding: 20px 30px;
+  flex-direction: row;
+  align-content: center;
+  border-bottom: 1px solid #dbdbdb;
+  -webkit-animation-name: entrance;
+  -webkit-animation-duration: 0.8s;
+  animation-name: entrance;
+  animation-duration: 0.8s;
+}
+
+@-webkit-keyframes entrance {
+  0% {
+    transform: translate(30px);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes entrance {
+  0% {
+    transform: translate(30px);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.appItem-rank {
+  flex: 0 0 12%;
+  text-align: center;
+  font-size: 38px;
+  line-height: 4;
+  font-family: "century gothic", "serif";
+  color: #b8b8b8;
+}
+
+.appItem-image-wrapper {
+  display: flex;
+  flex: 0 0 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.appItem-image {
+  width: 75%;
+  border-radius: 22px;
+}
+
+.appItem-image--rounded {
+  width: 75%;
+  border-radius: 50%;
+}
+
+.appItem-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.appItem-title {
+  flex: 0 0 25%;
+  font-size: 26px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.appItem-category {
+  flex: 0 0 25%;
+  font-size: 20px;
+  color: grey;
+}
+
+.appItem-rating {
+  flex: 0 0 25%;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #5b5b5b;
+}
+
+@media screen and (max-width: $tablet-screen-width) {
+  .appItem {
+    padding: 3%;
+  }
+
+  .appItem-rank {
+    font-size: 5.5vw;
+    line-height: 4;
+  }
+
+  .appItem-title {
+    font-size: 3.5vw;
+  }
+
+  .appItem-category {
+    font-size: 3vw;
+  }
+
+  .appItem-rating {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (max-width: $mobile-screen-width) {
+  .appItem {
+    padding: 2% 5%;
+  }
+
+  .appItem-rank {
+    flex: 0 0 10%;
+    font-size: 28px;
+    line-height: 4;
+  }
+
+  .appItem-image-wrapper {
+    flex: 0 0 28%;
+  }
+
+  .appItem-image {
+    width: 80%;
+    border-radius: 18px;
+  }
+
+  .appItem-title {
+    flex: 0 0 23%;
+    font-size: 4.5vw;
+  }
+
+  .appItem-category {
+    flex: 0 0 23%;
+    font-size: 3.8vw;
+  }
+
+  .appItem-rating {
+    font-size: 4vw;
+  }
+}

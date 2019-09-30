@@ -1,0 +1,36 @@
+.topFreeAppList-pagination {
+  width: 60%;
+  margin: 0 auto 20px auto;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.topFreeAppList-pagination>li {
+  flex: 1;
+  margin: 0px 3px;
+  text-align: center;
+  font-family: 'Century Gothic';
+}
+
+.topFreeAppList-pagination>li>a {
+  color: grey;
+}
+
+.topFreeAppList-pagination>.active {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-width: $tablet-screen-width) {
+  .topFreeAppList-pagination {
+    margin: 0 auto 10px auto;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: $mobile-screen-width) {
+  .topFreeAppList-pagination {
+    margin: auto;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,69 @@
+.mainPage-recommandations {
+  margin-top: $search-bar-height-web;
+}
+
+.mainPage-section-title {
+  padding: 2% 4%;
+
+  font: {
+    size: 30px;
+    weight: bold;
+  }
+}
+
+.mainPage-recommandation-list {
+  display: flex;
+  min-height: 270px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding: 0% 3% 3% 3%;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.mainPage-freeApps-list {
+  min-height: 600px;
+}
+
+.mainPage-message-noData {
+  text-align: center;
+  margin: 0 auto;
+
+  font: {
+    size: 3.5vw;
+    style: italic;
+  }
+
+  color: grey;
+}
+
+@media screen and (max-width: $tablet-screen-width) {
+  .mainPage-recommandations {
+    margin-top: $search-bar-height-tablet;
+  }
+
+  .mainPage-section-title {
+    font-size: 4.5vw;
+  }
+
+  .mainPage-recommandation-list {
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-width: $mobile-screen-width) {
+  .mainPage-recommandations {
+    margin-top: $search-bar-height-mobile;
+  }
+
+  .mainPage-section-title {
+    font-size: 22px;
+  }
+
+  .mainPage-recommandation-list {
+    min-height: 210px;
+  }
+
+  .mainPage-message-noData {
+    font-size: 4vw;
+  }
+}
